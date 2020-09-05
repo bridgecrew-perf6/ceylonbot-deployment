@@ -1,5 +1,7 @@
 ## Github Flow 
 
+# Clone this repo to get started! :)
+
 # 1. Create a branch from `master`
 In your local development environment pull down the newly created branch:
 $ git pull 
@@ -16,6 +18,10 @@ It is important you do not try to merge it with `master`! Make sure you are sele
 
 # 3. Submit for review
 ----------------------
+
+# Before coding, make sure that you are in the correct branch :)
+
+# When you merge, make sure that you merge your branch with the 'develop' branch and NOT 'master'
 
 **Adding feature**
 
