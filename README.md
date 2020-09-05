@@ -1,6 +1,6 @@
 ## Contributors
 
-Contributions are welcome! Please see our [Contributing Guide](https://imthaghost/zeus) for more details.
+
 
 <table>
   <tr>
