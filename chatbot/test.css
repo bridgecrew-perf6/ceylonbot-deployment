@@ -1,0 +1,72 @@
+body {
+    /* background-color: aquamarine; */
+}
+
+/* form {
+    width: 100%;
+    position: fixed;
+    bottom: 0px;
+
+} */
+
+  .text-box-div {
+    display: flex;
+    background-color: #FFFFFF;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    position: absolute;
+    width: 100%;
+    left: 0px;
+    bottom: 0;
+
+    /* Shadow on top of div */
+    -webkit-box-shadow: 0px -0px 0px #CACACA;
+    -moz-box-shadow: 0px -4px 3px #CACACA;
+    box-shadow: 0px -6px 6px #CACACA;
+  }
+  
+  #text-box {
+    width: 100%;
+    padding-left: 20px;
+    font-size: 24px;
+    border: 0px none;
+    outline: none;
+  }
+
+  ul {
+      background-color: blue;
+      color: white;
+      overflow:hidden; 
+      overflow-y:scroll;
+      height:200px; 
+      width: 100%;
+  }
+
+  .chat-history {
+    /* background-color: cornflowerblue; */
+    position: absolute;
+    top: 95px;
+    left: 0;
+    right: 0;
+    bottom: 0px;
+  }
+
+  .navbar {
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      height: 90px;
+
+    /* Shadow on bottom of div */
+      -moz-box-shadow: 0px 0px 5px 6px #CACACA;
+      -webkit-box-shadow: 0px 0px 5px 6px #CACACA;
+      box-shadow: 0px 0px 5px 6px #CACACA;
+  }
+  
+  .navbar > h1 {
+    text-align: center;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: #1C9F86;
+    font-size: 32px;
+}
