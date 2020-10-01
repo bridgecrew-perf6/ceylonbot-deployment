@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="test.css">
+        <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    </head>
+
+    <body>
+
+        <div class="navbar">
+            <h1>CeylonBot</h1>
+        </div>
+    
+        <div class="chat-history">
+
+            <ul id='list'>
+
+            </ul>
+            
+            <div class="text-box-div">
+                <input id="text-box" placeholder="Start typing" type="text" />
+            </div>
+
+        </div>
+        
+    </body>
+
+    <script>
+            $(document).on("keypress", "input", function(e){
+                if(e.which == 13) {
+                    // Get textbox value 
+                    var inputVal = $(this).val();
+                    
+                    //Now construct a quick list element
+                    // var li = "<li>" + text + "</li>";
+                    var z = document.createElement('li'); // is a node
+                    z.innerHTML = inputVal;
+
+                    // When the enter button is triggered, add an item to the list
+                    document.getElementById("list").appendChild(z);
+                }
+            });
+
+    </script>
+</html>
