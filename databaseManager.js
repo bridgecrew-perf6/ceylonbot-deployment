@@ -1,5 +1,6 @@
 'use strict';
 
+// set constant variable
 const uuidV1 = require('uuid/v1');
 const AWS = require('aws-sdk');
 const promisify = require('es6-promisify');
@@ -16,6 +17,7 @@ module.exports.saveOrderToDatabase = function(userId) {
   return saveItemToTable('product-order-table', item);
 };
 
+// save to db
 module.exports.saveUserToDatabase = function(userId) {
   console.log('saveUserToDatabase');
 
@@ -25,6 +27,7 @@ module.exports.saveUserToDatabase = function(userId) {
   return saveItemToTable('product-user-table', item);
 };
 
+// find users favorite items
 module.exports.findUserFavorite = function(userId) {
   const params = {
     TableName: 'product-user-table',
@@ -35,6 +38,7 @@ module.exports.findUserFavorite = function(userId) {
 
   const getAsync = promisify(dynamo.get, dynamo);
 
+  // make sure item is not null
   return getAsync(params).then(response => {
     if (_.isEmpty(response)) {
       console.log(`User with userId:${userId} not found`);
@@ -44,6 +48,7 @@ module.exports.findUserFavorite = function(userId) {
   });
 };
 
+// save items to table for db
 function saveItemToTable(tableName, item) {
   const params = {
     TableName: tableName,
