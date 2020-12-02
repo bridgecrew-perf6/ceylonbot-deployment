@@ -7,32 +7,34 @@ const promisify = require('es6-promisify');
 const _ = require('lodash');
 const dynamo = new AWS.DynamoDB.DocumentClient();
 
-module.exports.saveOrderToDatabase = function(userId) {
-  console.log('saveOrderToDatabase');
+// save current message to db
+module.exports.saveMessageToDatabase = function(itemId) {
+  console.log('saveMessageToDatabase');
 
   const item = {};
   item.orderId = uuidV1();
-  item.userId = userId;
+  item.itemId = itemId;
 
   return saveItemToTable('product-order-table', item);
 };
 
-// save to db
-module.exports.saveUserToDatabase = function(userId) {
-  console.log('saveUserToDatabase');
+// save entire backlog conversating to db
+module.exports.saveBackLogToDatabase = function(itemId) {
+  console.log('saveBackLogToDatabase');
 
   const item = {};
-  item.userId = userId;
+  item.BackLogId = BackLogId;
 
   return saveItemToTable('product-user-table', item);
 };
 
 // find users favorite items
-module.exports.findUserFavorite = function(userId) {
+// ex: beaches, landmarks, shops
+module.exports.findUserFavorite = function(itemId) {
   const params = {
     TableName: 'product-user-table',
     Key: {
-      userId
+      itemId
     }
   };
 
@@ -41,14 +43,14 @@ module.exports.findUserFavorite = function(userId) {
   // make sure item is not null
   return getAsync(params).then(response => {
     if (_.isEmpty(response)) {
-      console.log(`User with userId:${userId} not found`);
-      return Promise.reject(new Error(`User with userId:${userId} not found`));
+      console.log(`User with userId:${itemId} not found`);
+      return Promise.reject(new Error(`User with userId:${itemId} not found`));
     }
     return response.Item;
   });
 };
 
-// save items to table for db
+// save entire log to db
 function saveItemToTable(tableName, item) {
   const params = {
     TableName: tableName,
