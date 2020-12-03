@@ -45,6 +45,7 @@ function dispatch(intentRequest, callback) {
     const interestingQuestion = slots.interestingQuestion;
     const giftResponse = slots.giftResponse;
     const yesNo = slots.yesNo;
+    const curiousX = slots.curiousX;
 
     // const lookingFor = slots.lookingFor; //User Input
     if (interestingQuestion === "I'm not sure") {
@@ -95,15 +96,15 @@ function dispatch(intentRequest, callback) {
     if (giftResponse === "love") {
         if (yesNo === "Yes") {
             callback(close(sessionAttributes, 'Fulfilled',
-            {'contentType': 'PlainText', 'content': `Hmmm...let me take a look at what I can find for you.\n Respond with "facial products" for our products or "other" for more options`}));
+            {'contentType': 'PlainText', 'content': `What makes that one of your top gifts to choose?`}));
         } else if (yesNo === "No") {
             callback(close(sessionAttributes, 'Fulfilled',
-            {'contentType': 'PlainText', 'content': `Respond with "facial products" for our products or "other" for more options`}));
+            {'contentType': 'PlainText', 'content': `What makes that one of your top gifts to choose?`}));
         }
     } else if (giftResponse === "electronics") {
         if (yesNo === "Yes") {
             callback(close(sessionAttributes, 'Fulfilled',
-            {'contentType': 'PlainText', 'content': `Hmmm...let me take a look at what I can find for you.\n Respond with "facial products" for our products or "other" for more options`}));
+            {'contentType': 'PlainText', 'content': `What makes that one of your top gifts to choose?`}));
         } else if (yesNo === "No") {
             callback(close(sessionAttributes, 'Fulfilled',
             {'contentType': 'PlainText', 'content': `Respond with "facial products" for our products or "other" for more options`}));
@@ -111,7 +112,7 @@ function dispatch(intentRequest, callback) {
     } else if (giftResponse === "skin care") {
         if (yesNo === "Yes") {
             callback(close(sessionAttributes, 'Fulfilled',
-            {'contentType': 'PlainText', 'content': `Hmmm...let me take a look at what I can find for you.\n Respond with "facial products" for our products or "other" for more options`}));
+            {'contentType': 'PlainText', 'content': `What makes that one of your top gifts to choose?`}));
         } else if (yesNo === "No") {
             callback(close(sessionAttributes, 'Fulfilled',
             {'contentType': 'PlainText', 'content': `Respond with "facial products" for our products or "other" for more options`}));
@@ -119,7 +120,7 @@ function dispatch(intentRequest, callback) {
     } else if (giftResponse === "book") {
         if (yesNo === "Yes") {
             callback(close(sessionAttributes, 'Fulfilled',
-            {'contentType': 'PlainText', 'content': `Hmmm...let me take a look at what I can find for you.\n Respond with "facial products" for our products or "other" for more options`}));
+            {'contentType': 'PlainText', 'content': `What makes that one of your top gifts to choose?`}));
         } else if (yesNo === "No") {
             callback(close(sessionAttributes, 'Fulfilled',
             {'contentType': 'PlainText', 'content': `Respond with "facial products" for our products or "other" for more options`}));
@@ -127,7 +128,7 @@ function dispatch(intentRequest, callback) {
     } else if (giftResponse === "drinks") {
         if (yesNo === "Yes") {
             callback(close(sessionAttributes, 'Fulfilled',
-            {'contentType': 'PlainText', 'content': `Hmmm...let me take a look at what I can find for you.\n Respond with "facial products" for our products or "other" for more options`}));
+            {'contentType': 'PlainText', 'content': `What makes that one of your top gifts to choose?`}));
         } else if (yesNo === "No") {
             callback(close(sessionAttributes, 'Fulfilled',
             {'contentType': 'PlainText', 'content': `Respond with "facial products" for our products or "other" for more options`}));
@@ -135,7 +136,7 @@ function dispatch(intentRequest, callback) {
     } else if (giftResponse === "bag") {
         if (yesNo === "Yes") {
             callback(close(sessionAttributes, 'Fulfilled',
-            {'contentType': 'PlainText', 'content': `Hmmm...let me take a look at what I can find for you.\n Respond with "facial products" for our products or "other" for more options`}));
+            {'contentType': 'PlainText', 'content': `What makes that one of your top gifts to choose?`}));
         } else if (yesNo === "No") {
             callback(close(sessionAttributes, 'Fulfilled',
             {'contentType': 'PlainText', 'content': `Respond with "facial products" for our products or "other" for more options`}));
@@ -143,7 +144,7 @@ function dispatch(intentRequest, callback) {
     } else if (giftResponse === "appreciation") {
         if (yesNo === "Yes") {
             callback(close(sessionAttributes, 'Fulfilled',
-            {'contentType': 'PlainText', 'content': `Hmmm...let me take a look at what I can find for you.\n Respond with "facial products" for our products or "other" for more options`}));
+            {'contentType': 'PlainText', 'content': `What makes that one of your top gifts to choose?`}));
         } else if (yesNo === "No") {
             callback(close(sessionAttributes, 'Fulfilled',
             {'contentType': 'PlainText', 'content': `Respond with "facial products" for our products or "other" for more options`}));
@@ -151,7 +152,7 @@ function dispatch(intentRequest, callback) {
     } else if (giftResponse === "food") {
         if (yesNo === "Yes") {
             callback(close(sessionAttributes, 'Fulfilled',
-            {'contentType': 'PlainText', 'content': `Hmmm...let me take a look at what I can find for you.\n Respond with "facial products" for our products or "other" for more options`}));
+            {'contentType': 'PlainText', 'content': `What makes that one of your top gifts to choose?`}));
         } else if (yesNo === "No") {
             callback(close(sessionAttributes, 'Fulfilled',
             {'contentType': 'PlainText', 'content': `Respond with "facial products" for our products or "other" for more options`}));
@@ -159,7 +160,7 @@ function dispatch(intentRequest, callback) {
     } else if (giftResponse === "products") {
         if (yesNo === "Yes") {
             callback(close(sessionAttributes, 'Fulfilled',
-            {'contentType': 'PlainText', 'content': `Hmmm...let me take a look at what I can find for you.\n Respond with "facial products" for our products or "other" for more options`}));
+            {'contentType': 'PlainText', 'content': `What makes that one of your top gifts to choose?`}));
         } else if (yesNo === "No") {
             callback(close(sessionAttributes, 'Fulfilled',
             {'contentType': 'PlainText', 'content': `Respond with "facial products" for our products or "other" for more options`}));
@@ -167,7 +168,7 @@ function dispatch(intentRequest, callback) {
     } else if (giftResponse === "vehicle") {
         if (yesNo === "Yes") {
             callback(close(sessionAttributes, 'Fulfilled',
-            {'contentType': 'PlainText', 'content': `Hmmm...let me take a look at what I can find for you.\n Respond with "facial products" for our products or "other" for more options`}));
+            {'contentType': 'PlainText', 'content': `What makes that one of your top gifts to choose?`}));
         } else if (yesNo === "No") {
             callback(close(sessionAttributes, 'Fulfilled',
             {'contentType': 'PlainText', 'content': `Respond with "facial products" for our products or "other" for more options`}));
@@ -175,7 +176,7 @@ function dispatch(intentRequest, callback) {
     } else if (giftResponse === "admiration") {
         if (yesNo === "Yes") {
             callback(close(sessionAttributes, 'Fulfilled',
-            {'contentType': 'PlainText', 'content': `Hmmm...let me take a look at what I can find for you.\n Respond with "facial products" for our products or "other" for more options`}));
+            {'contentType': 'PlainText', 'content': `What makes that one of your top gifts to choose?`}));
         } else if (yesNo === "No") {
             callback(close(sessionAttributes, 'Fulfilled',
             {'contentType': 'PlainText', 'content': `Respond with "facial products" for our products or "other" for more options`}));
@@ -183,7 +184,7 @@ function dispatch(intentRequest, callback) {
     } else if (giftResponse === "money") {
         if (yesNo === "Yes") {
             callback(close(sessionAttributes, 'Fulfilled',
-            {'contentType': 'PlainText', 'content': `Hmmm...let me take a look at what I can find for you.\n Respond with "facial products" for our products or "other" for more options`}));
+            {'contentType': 'PlainText', 'content': `What makes that one of your top gifts to choose?`}));
         } else if (yesNo === "No") {
             callback(close(sessionAttributes, 'Fulfilled',
             {'contentType': 'PlainText', 'content': `Respond with "facial products" for our products or "other" for more options`}));
@@ -191,7 +192,7 @@ function dispatch(intentRequest, callback) {
     } else if (giftResponse === "car") {
         if (yesNo === "Yes") {
             callback(close(sessionAttributes, 'Fulfilled',
-            {'contentType': 'PlainText', 'content': `Hmmm...let me take a look at what I can find for you.\n Respond with "facial products" for our products or "other" for more options`}));
+            {'contentType': 'PlainText', 'content': `What makes that one of your top gifts to choose?`}));
         } else if (yesNo === "No") {
             callback(close(sessionAttributes, 'Fulfilled',
             {'contentType': 'PlainText', 'content': `Respond with "facial products" for our products or "other" for more options`}));
@@ -199,7 +200,7 @@ function dispatch(intentRequest, callback) {
     } else if (giftResponse === "phone") {
         if (yesNo === "Yes") {
             callback(close(sessionAttributes, 'Fulfilled',
-            {'contentType': 'PlainText', 'content': `Hmmm...let me take a look at what I can find for you.\n Respond with "facial products" for our products or "other" for more options`}));
+            {'contentType': 'PlainText', 'content': `What makes that one of your top gifts to choose?`}));
         } else if (yesNo === "No") {
             callback(close(sessionAttributes, 'Fulfilled',
             {'contentType': 'PlainText', 'content': `Respond with "facial products" for our products or "other" for more options`}));
@@ -207,7 +208,7 @@ function dispatch(intentRequest, callback) {
     } else if (giftResponse === "furniture") {
         if (yesNo === "Yes") {
             callback(close(sessionAttributes, 'Fulfilled',
-            {'contentType': 'PlainText', 'content': `Hmmm...let me take a look at what I can find for you.\n Respond with "facial products" for our products or "other" for more options`}));
+            {'contentType': 'PlainText', 'content': `What makes that one of your top gifts to choose?`}));
         } else if (yesNo === "No") {
             callback(close(sessionAttributes, 'Fulfilled',
             {'contentType': 'PlainText', 'content': `Respond with "facial products" for our products or "other" for more options`}));
@@ -215,7 +216,7 @@ function dispatch(intentRequest, callback) {
     } else if (giftResponse === "dog") {
         if (yesNo === "Yes") {
             callback(close(sessionAttributes, 'Fulfilled',
-            {'contentType': 'PlainText', 'content': `Hmmm...let me take a look at what I can find for you.\n Respond with "facial products" for our products or "other" for more options`}));
+            {'contentType': 'PlainText', 'content': `What makes that one of your top gifts to choose?`}));
         } else if (yesNo === "No") {
             callback(close(sessionAttributes, 'Fulfilled',
             {'contentType': 'PlainText', 'content': `Respond with "facial products" for our products or "other" for more options`}));
@@ -223,12 +224,44 @@ function dispatch(intentRequest, callback) {
     } else if (giftResponse === "pet") {
         if (yesNo === "Yes") {
             callback(close(sessionAttributes, 'Fulfilled',
-            {'contentType': 'PlainText', 'content': `Hmmm...let me take a look at what I can find for you.\n Respond with "facial products" for our products or "other" for more options`}));
+            {'contentType': 'PlainText', 'content': `What makes that one of your top gifts to choose?`}));
         } else if (yesNo === "No") {
             callback(close(sessionAttributes, 'Fulfilled',
             {'contentType': 'PlainText', 'content': `Respond with "facial products" for our products or "other" for more options`}));
         }
     }
+    
+    
+    if (curiousX === "Just because") {
+        callback(close(sessionAttributes, 'Fulfilled',
+        {'contentType': 'PlainText', 'content': `Since you seem to be interested in something out of the ordinary, you should take a look at some of the interesting sights that are in San Francisco or Los Angeles by typing in either city name!`}));
+    } else if (curiousX === "idk") {
+        callback(close(sessionAttributes, 'Fulfilled',
+        {'contentType': 'PlainText', 'content': `Since you seem to be interested in something out of the ordinary, you should take a look at some of the interesting sights that are in San Francisco or Los Angeles by typing in either city name!`}));
+    } else if (curiousX === "I don't know") {
+        callback(close(sessionAttributes, 'Fulfilled',
+        {'contentType': 'PlainText', 'content': `Since you seem to be interested in something out of the ordinary, you should take a look at some of the interesting sights that are in San Francisco or Los Angeles by typing in either city name!`}));
+    } else if (curiousX === "curious") {
+        callback(close(sessionAttributes, 'Fulfilled',
+        {'contentType': 'PlainText', 'content': `Since you seem to be interested in something out of the ordinary, you should take a look at some of the interesting sights that are in San Francisco or Los Angeles by typing in either city name!`}));
+    } else if (curiousX === "eager") {
+        callback(close(sessionAttributes, 'Fulfilled',
+        {'contentType': 'PlainText', 'content': `Since you seem to be interested in something out of the ordinary, you should take a look at some of the interesting sights that are in San Francisco or Los Angeles by typing in either city name!`}));
+    } else if (curiousX === "Just because i wanted to") {
+        callback(close(sessionAttributes, 'Fulfilled',
+        {'contentType': 'PlainText', 'content': `Since you seem to be interested in something out of the ordinary, you should take a look at some of the interesting sights that are in San Francisco or Los Angeles by typing in either city name!`}));
+    } else if (curiousX === "intrigued") {
+        callback(close(sessionAttributes, 'Fulfilled',
+        {'contentType': 'PlainText', 'content': `Since you seem to be interested in something out of the ordinary, you should take a look at some of the interesting sights that are in San Francisco or Los Angeles by typing in either city name!`}));
+    } else if (curiousX === "I'm not sure why") {
+        callback(close(sessionAttributes, 'Fulfilled',
+        {'contentType': 'PlainText', 'content': `Since you seem to be interested in something out of the ordinary, you should take a look at some of the interesting sights that are in San Francisco or Los Angeles by typing in either city name!`}));
+    } else if (curiousX === "interested") {
+        callback(close(sessionAttributes, 'Fulfilled',
+        {'contentType': 'PlainText', 'content': `Since you seem to be interested in something out of the ordinary, you should take a look at some of the interesting sights that are in San Francisco or Los Angeles by typing in either city name!`}));
+    }
+
+
 
 }
 // Route the incoming request based on intent.
