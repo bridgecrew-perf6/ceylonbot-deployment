@@ -50,45 +50,89 @@ function dispatch(intentRequest, callback) {
     // const lookingFor = slots.lookingFor; //User Input
     if (interestingQuestion === "I'm not sure") {
         callback(close(sessionAttributes, 'Fulfilled',
-        {'contentType': 'PlainText', 'content': `Hmmm...let me take a look at what I can find for you.\n Respond with "facial products" for our products or "other" for more options`}));
+        {'contentType': 'PlainText', 'content': `What are you looking for then?
+            Something useful?
+            Something fancy?
+            Something from Ceylon?
+            Something nice?\n Respond with 'other' for more options`}));
 
     } else if (interestingQuestion === "I don't know") {
             callback(close(sessionAttributes, 'Fulfilled',
-            {'contentType': 'PlainText', 'content': `Hmmm...let me take a look at what I can find for you.\n Respond with "facial products" for our products or "other" for more options`}));
+            {'contentType': 'PlainText', 'content': `What are you looking for then?
+            Something useful?
+            Something fancy?
+            Something from Ceylon?
+            Something nice?\n Respond with 'other' for more options`}));
     } else if (interestingQuestion === "Tell me what I need") {
             callback(close(sessionAttributes, 'Fulfilled',
-            {'contentType': 'PlainText', 'content': `Hmmm...let me take a look at what I can find for you.\n Respond with "facial products" for our products or "other" for more options`}));
+            {'contentType': 'PlainText', 'content': `What are you looking for then?
+            Something useful?
+            Something fancy?
+            Something from Ceylon?
+            Something nice?\n Respond with 'other' for more options`}));
     } else if (interestingQuestion === "I can figure it out") {
             callback(close(sessionAttributes, 'Fulfilled',
-            {'contentType': 'PlainText', 'content': `Hmmm...let me take a look at what I can find for you.\n Respond with "facial products" for our products or "other" for more options`}));
+            {'contentType': 'PlainText', 'content': `What are you looking for then?
+            Something useful?
+            Something fancy?
+            Something from Ceylon?
+            Something nice?\n Respond with 'other' for more options`}));
         
     } else if (interestingQuestion === "I can lead ") {
             callback(close(sessionAttributes, 'Fulfilled',
-            {'contentType': 'PlainText', 'content': `Hmmm...let me take a look at what I can find for you.\n Respond with "facial products" for our products or "other" for more options`}));
+            {'contentType': 'PlainText', 'content': `What are you looking for then?
+            Something useful?
+            Something fancy?
+            Something from Ceylon?
+            Something nice?\n Respond with 'other' for more options`}));
         
     } else if (interestingQuestion === "I know what I need") {
             callback(close(sessionAttributes, 'Fulfilled',
-            {'contentType': 'PlainText', 'content': `Hmmm...let me take a look at what I can find for you.\n Respond with "facial products" for our products or "other" for more options`}));
+            {'contentType': 'PlainText', 'content': `What are you looking for then?
+            Something useful?
+            Something fancy?
+            Something from Ceylon?
+            Something nice?\n Respond with 'other' for more options`}));
         
     } else if (interestingQuestion === "Tell me") {
             callback(close(sessionAttributes, 'Fulfilled',
-            {'contentType': 'PlainText', 'content': `Hmmm...let me take a look at what I can find for you.\n Respond with "facial products" for our products or "other" for more options`}));
+            {'contentType': 'PlainText', 'content': `What are you looking for then?
+            Something useful?
+            Something fancy?
+            Something from Ceylon?
+            Something nice?\n Respond with 'other' for more options`}));
         
     } else if (interestingQuestion === "You can lead me") {
             callback(close(sessionAttributes, 'Fulfilled',
-            {'contentType': 'PlainText', 'content': `Hmmm...let me take a look at what I can find for you.\n Respond with "facial products" for our products or "other" for more options`}));
+            {'contentType': 'PlainText', 'content': `What are you looking for then?
+            Something useful?
+            Something fancy?
+            Something from Ceylon?
+            Something nice?\n Respond with 'other' for more options`}));
         
     } else if (interestingQuestion === "what would you recommend") {
             callback(close(sessionAttributes, 'Fulfilled',
-            {'contentType': 'PlainText', 'content': `Hmmm...let me take a look at what I can find for you.\n Respond with "facial products" for our products or "other" for more options`}));
+            {'contentType': 'PlainText', 'content': `What are you looking for then?
+            Something useful?
+            Something fancy?
+            Something from Ceylon?
+            Something nice?\n Respond with 'other' for more options`}));
         
     } else if (interestingQuestion === "Tell me") {
             callback(close(sessionAttributes, 'Fulfilled',
-            {'contentType': 'PlainText', 'content': `Hmmm...let me take a look at what I can find for you.\n Respond with "facial products" for our products or "other" for more options`}));
-       
+            {'contentType': 'PlainText', 'content': `What are you looking for then?
+            Something useful?
+            Something fancy?
+            Something from Ceylon?
+            Something nice?\n Respond with 'other' for more options`}));
+                  
     } else if (interestingQuestion === "You are the one") {
             callback(close(sessionAttributes, 'Fulfilled',
-            {'contentType': 'PlainText', 'content': `Hmmm...let me take a look at what I can find for you.\n Respond with "facial products" for our products or "other" for more options`}));
+            {'contentType': 'PlainText', 'content': `What are you looking for then?
+            Something useful?
+            Something fancy?
+            Something from Ceylon?
+            Something nice?\n Respond with 'other' for more options`}));
     
     }
     
@@ -264,16 +308,7 @@ function dispatch(intentRequest, callback) {
 
 
 }
-// Route the incoming request based on intent.
-// The JSON body of the request is provided in the event slot.
-// exports.handler = (event, context, callback) => {
-//     try {
-//         console.log(`event.bot.name=${event.bot.name}`);
-//         dispatch(event, (response) => {callback(null, response);});
-//     } catch (err) {
-//         callback(err);
-//     }
-// };
+
 
 module.exports.intents = (event, context, callback) => {
   try {
