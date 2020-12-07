@@ -38,6 +38,8 @@ function dispatch(intentRequest, callback) {
         {'contentType': 'PlainText', 'content': 'Test'}));
     }
 }
+
+
 // --------------- Main handler -----------------------
 // Route the incoming request based on intent.
 // The JSON body of the request is provided in the event slot.
